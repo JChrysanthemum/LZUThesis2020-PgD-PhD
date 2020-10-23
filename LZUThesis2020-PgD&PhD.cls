@@ -275,11 +275,11 @@
     \cleardoublepage
     \thispagestyle{empty}
     \begin{flushleft}
-      {\zihao{5}\bfseries\songti 学校代码: 10730}
+      {\zihao{5}\bfseries\songti 学校代码：10730}
       \hspace{260pt}
       {\zihao{5}\bfseries\songti 密级：公开}
 
-      {\zihao{5}\bfseries\songti 分类号：23333}
+      {\zihao{5}\bfseries\songti \quad 分类号：23333}
     \end{flushleft}
 
     \begin{center}
@@ -357,10 +357,10 @@
     \parskip 0pt
 
     \begin{center}
-        {\bfseries\songti\zihao{3}{诚信责任书}} % “诚信责任书”这几个字，应该是加粗（宋体加粗）
+        {\bfseries\songti\zihao{3}{原\quad 创\quad 性\quad 声\quad 明}} % “诚信责任书”这几个字，应该是加粗（宋体加粗）
     \end{center}
 
-    本人郑重声明：本人所呈交的毕业论文（设计），是在导师的指导下独立进行研究所取得的成果。毕业论文（设计）中凡引用他人已经发表或未发表的成果、数据、观点等，均已明确注明出处。除文中已经注明引用的内容外，不包含任何其他个人或集体已经发表或在网上发表的论文。
+    本人郑重声明：本人所呈交的学位论文，是在导师的指导下独立进行研究所取得的成果。学位论文中凡引用他人已经发表或未发表的成果、数据、观点等，均已明确注明出处。除文中已经注明引用的内容外，不包含任何其他个人或集体已经发表或撰写过的科研成果。对本文的研究成果做出重要贡献的个人和集体，均已在文中以明确方式标明。
 
     本声明的法律责任由本人承担。
 
@@ -369,19 +369,20 @@
 
     \begin{center}
         \begin{tabular*}{\textwidth}{rm{\fifth}lm{\fifth} cm{\fifth}rp{\fifth}lm{\fifth}}
-            论\hfill 文\hfill 作\hfill 者\hfill 签\hfill 名 ：&\LZUunderline[\fifth]{\the\mysignature} & \hspace{\middlespace} & 日\hfill 期：&\LZUunderline[\fifth]{\the \mytime}
+            论\hfill 文\hfill 作\hfill 者\hfill 签\hfill 名 ：&\LZUunderline[\fifth]{\the\mysignature} & \hspace{\middlespace} & \hfill 日\quad 期：&\LZUunderline[\fifth]{\the \mytime}
         \end{tabular*}
     \end{center}
 
     \vskip2.0cm
 
     \begin{center}
-        {\bfseries\songti\zihao{3}{关于毕业论文（设计）使用授权的声明}}% “关于毕业论文（设计）使用授权的声明”这几个字，应该是加粗（宋体加粗）
+        {\bfseries\songti\zihao{3}{关于学位论文使用授权的声明}}% “关于毕业论文（设计）使用授权的声明”这几个字，应该是加粗（宋体加粗）
     \end{center}
 
-    本人在导师指导下所完成的论文及相关的职务作品，知识产权归属兰州大学。本人完全了解兰州大学有关保存、使用毕业论文（设计）的规定，同意学校保存或向国家有关部门或机构送交论文的纸质版和电子版，允许论文被查阅和借阅；本人授权兰州大学可以将本毕业论文（设计）的全部或部分内容编入有关数据库进行检索，可以采用任何复制手段保存和汇编本毕业论文（设计）。本人离校后发表、使用毕业论文（设计）或与该毕业论文（设计）直接相关的学术论文或成果时，第一署名单位仍然为兰州大学。
+    本人在导师指导下所完成的论文及相关的职务作品，知识产权归属兰州大学。本人完全了解兰州大学有关保存、使用学位论文的规定，同意学校保存或向国家有关部门或机构送交论文的纸质版和电子版，允许论文被查阅和借阅；本人授权兰州大学可以将本学位论文的全部或部分内容编入有关数据库进行检索，可以采用任何复制手段保存和汇编本学位论文。本人离校后发表、使用学位论文或与该论文直接相关的学术论文或成果时，第一署名单位仍然为兰州大学。
 
-    本毕业论文（设计）研究内容：
+    本学位论文研究内容：
+
 
 % 如果不能公开，请把下面这两个置换    \done   $\square$
     \done 可以公开
