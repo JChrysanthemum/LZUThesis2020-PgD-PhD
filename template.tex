@@ -84,12 +84,14 @@
 
 
 %中文摘要
-\ZhAbstract{空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页}{key-word-1，key-word-2}
+\ZhAbstract{空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页 空白页}{关键词1，关键词2}
 
 
 %英文摘要
-\EnAbstract{example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example .\fontspec{Times New Roman} {abcdQR}}
-{key-word-1:key-word-2}
+\EnAbstract{example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example example .
+
+\fontspec{Times New Roman} {Times New Roman}}
+{key-word-1,key-word-2}
 
 %生成目录
 \tableofcontents
@@ -104,6 +106,8 @@
 \subsection{次节}
 
 {\bfseries 编译方式:} XeLaTeX -->BibTeX --> XeLaTeX-->XeLaTeX
+
+原本科模板\cite{partl2016}
 
 \begin{table}[H]
     \centering
@@ -127,7 +131,7 @@
 %引入参考文献文件
 %=======%
 \bibdatabase{bib/database}%bib文件名称 仅修改bib/ 后部分
-% \printbib
+\printbib
 % \nocite{*} %显示数据库中有的，但是正文没有引用的文献
 
 
