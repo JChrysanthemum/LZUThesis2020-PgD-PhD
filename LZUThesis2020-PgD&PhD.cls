@@ -163,7 +163,7 @@
 \RequirePackage{longtable}
 % 连续参考文献横杠连接
 \RequirePackage{cite}
-\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}} 
+\newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
 
 
 %=======head and foot
@@ -564,8 +564,8 @@
 % 表：表名置于表的上方，五号字，宋体，居中（英文用Times New Roman体10.5磅），单倍行距，段前6磅，段后6磅，表序与表名之间空1个汉字符。
 % 图和表下方的注释为五号字，宋体，居左（英文用Times New Roman体10.5磅），单倍行距。
 
-\renewcommand{\thefigure}{\thechapter.\@arabic \c@figure}
-\renewcommand{\thetable}{\thechapter.\@arabic \c@table}
+\renewcommand{\thefigure}{\thechapter-\@arabic \c@figure}
+\renewcommand{\thetable}{\thechapter-\@arabic \c@table}
 % 图序与图名之间空1个汉字符。
 \RequirePackage[labelsep = quad]{caption}
 % 这应该图和表单独设置，但是我都设置了6，你可以自己在插入表格时单独设定图的要求
