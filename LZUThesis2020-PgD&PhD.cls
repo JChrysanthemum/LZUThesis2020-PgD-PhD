@@ -65,6 +65,9 @@
 % 修复上面的冲突
 \RequirePackage[titles,subfigure]{tocloft}
 
+% 新增空白页
+\RequirePackage{afterpage}
+
 
 %============================ 我自己用的一些小命令 =========%
 %
@@ -75,6 +78,10 @@
 \newcommand{\eqrm}[1]{
     $\rm #1 $
 }
+
+% 增加空白页，类似word的换页符，方便打印装订
+\newcommand{\blankpage}{\afterpage{\null\newpage}}
+
 
 % 表格文字居中，其实就是相当于表格合并
 % 用法 \tabincell{c}{物理//量//单位}
@@ -164,7 +171,6 @@
 % 连续参考文献横杠连接
 \RequirePackage{cite}
 \newcommand{\upcite}[1]{\textsuperscript{\textsuperscript{\cite{#1}}}}
-
 
 %=======head and foot
 %页眉页脚
@@ -557,6 +563,7 @@
 \floatname{algorithm}{算法}
 \renewcommand{\algorithmicrequire}{\bfseries{输入:}}
 \renewcommand{\algorithmicensure}{\bfseries{输出:}}
+
 
 %改变图表的编号格式
 
