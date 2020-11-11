@@ -571,6 +571,7 @@
 % 表：表名置于表的上方，五号字，宋体，居中（英文用Times New Roman体10.5磅），单倍行距，段前6磅，段后6磅，表序与表名之间空1个汉字符。
 % 图和表下方的注释为五号字，宋体，居左（英文用Times New Roman体10.5磅），单倍行距。
 
+\renewcommand{\theequation}{\thechapter-\@arabic \c@equation}
 \renewcommand{\thefigure}{\thechapter-\@arabic \c@figure}
 \renewcommand{\thetable}{\thechapter-\@arabic \c@table}
 % 图序与图名之间空1个汉字符。
