@@ -33,7 +33,7 @@
 %% the subsection title format
 %% 三级标题黑体，小四号，首行缩进2个汉字符，单倍行距，段前12磅，段后6磅。
 \def\CTEX@subsection@format{\heiti\zihao{-4}}
-\def\CTEX@subsection@indent{2\ccwd}
+% \def\CTEX@subsection@indent{2\ccwd}
 \def\CTEX@subsection@beforeskip{12pt}
 \def\CTEX@subsection@afterskip{6pt}
 %%
