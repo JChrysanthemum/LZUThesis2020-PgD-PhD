@@ -325,9 +325,11 @@
             }%
             % “学生姓名等、指导教师、……”这几个字，应该是加粗（宋体加粗）
             {\bfseries\songti \zihao{4}{作\hfill 者\hfill 姓\hfill 名}} &
-            {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\the\major}} \\[0.40cm]
-            {\bfseries\songti \zihao{4} {学\hfill 科\hfill 专\hfill 业}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\@author}}\\[0.40cm]
+
+            {\bfseries\songti \zihao{4} {学\hfill 科\hfill 专\hfill 业}} &
+            {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\the\major}} \\[0.40cm]
+               
             {\bfseries\songti \zihao{4}{研\hfill 究\hfill 方\hfill 向}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}  \the\research}} \\[0.40cm]
             {\bfseries\songti \zihao{4}{教\hfill 育\hfill 类\hfill 型}} &
