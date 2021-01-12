@@ -1,9 +1,10 @@
-# 兰州大学硕士（博士）学位论文 Latex 模板 beta 0.1
+# 兰州大学硕士（博士）学位论文 Latex 模板 1.0
 
 This project is a fork from [LZUThesis2020](https://github.com/yuhlzu/LZUThesis2020)
 
 此项目更具官方模板调整了部分参数，基本与官方word文件保持一致。
-Latex项目具体问题参照原链接
+Latex项目具体问题参照原链接。修改完成的一个完整版本，如果今年我
+的毕业论文格式没有问题，那么以后这个模板也算是验证过了。
 
 模板样式
 ![show](other/template.png)
