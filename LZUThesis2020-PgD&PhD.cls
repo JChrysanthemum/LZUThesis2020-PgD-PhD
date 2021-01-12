@@ -251,6 +251,10 @@
 % 2.学生姓名、指导教师、学院、专业、年级字体为宋体，三号。
 %
 %%=======information
+\newtoks\schoolcode
+\newtoks\secret
+\newtoks\cid
+
 \newtoks\major
 \newtoks\research
 \newtoks\education
@@ -282,11 +286,11 @@
     \cleardoublepage
     \thispagestyle{empty}
     \begin{flushleft}
-      {\zihao{5}\bfseries\songti 学校代码：10730}
+      {\zihao{5}\bfseries\songti 学校代码：\the\schoolcode}
       \hspace{260pt}
-      {\zihao{5}\bfseries\songti 密级：公开}
+      {\zihao{5}\bfseries\songti 密级：\the\secret}
 
-      {\zihao{5}\bfseries\songti \quad 分类号：23333}
+      {\zihao{5}\bfseries\songti \quad 分类号：\the\cid}
     \end{flushleft}
 
     \begin{center}
@@ -326,10 +330,8 @@
             % “学生姓名等、指导教师、……”这几个字，应该是加粗（宋体加粗）
             {\bfseries\songti \zihao{4}{作\hfill 者\hfill 姓\hfill 名}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\@author}}\\[0.40cm]
-
             {\bfseries\songti \zihao{4} {学\hfill 科\hfill 专\hfill 业}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\the\major}} \\[0.40cm]
-               
             {\bfseries\songti \zihao{4}{研\hfill 究\hfill 方\hfill 向}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}  \the\research}} \\[0.40cm]
             {\bfseries\songti \zihao{4}{教\hfill 育\hfill 类\hfill 型}} &
@@ -625,7 +627,7 @@
     \phantomsection
     \setcounter{section}{0}
     \setcounter{chapter}{1}
-    \renewcommand{\thechapter}{A}%
+    \renewcommand{\thechapter}{T}%
     \addcontentsline{toc}{chapter}{\texorpdfstring{致\qquad 谢}{致谢}}
     \chapter*{致\qquad 谢}
     \zihao{-4}\fangsong
@@ -636,11 +638,22 @@
     \phantomsection
     \setcounter{section}{0}
     \setcounter{chapter}{1}
-    \renewcommand{\thechapter}{A}%
+    \renewcommand{\thechapter}{O}%
     \addcontentsline{toc}{chapter}{\texorpdfstring{在学期间的研究成果}{在学期间的研究成果}}
     \chapter*{在学期间的研究成果}
     \zihao{-4}\fangsong
 }
+
+% \newcommand{\MyAppendix}{%
+%     \cleardoublepage
+%     \phantomsection
+%     \setcounter{section}{0}
+%     \setcounter{chapter}{1}
+%     \renewcommand{\thechapter}{A}%
+%     \addcontentsline{toc}{chapter}{\texorpdfstring{附录}{附录}}
+%     \chapter*{附录}
+%     \zihao{-4}\fangsong
+% }
 
 \newcommand{\blank}{%
     \hspace*{\fill}
