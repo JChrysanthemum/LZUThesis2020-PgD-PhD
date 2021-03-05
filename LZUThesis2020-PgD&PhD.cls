@@ -31,9 +31,10 @@
 %\def\CTEX@section@afterskip{1.0ex \@plus .2ex}
 %%
 %% the subsection title format
-%% 三级标题黑体，小四号，首行缩进2个汉字符，单倍行距，段前12磅，段后6磅。
+%% 三级标题黑体，小四号，单倍行距，段前12磅，段后6磅。
+%% 首行缩进2个汉字符 2020年新规定
 \def\CTEX@subsection@format{\heiti\zihao{-4}}
-% \def\CTEX@subsection@indent{2\ccwd}
+\def\CTEX@subsection@indent{2\ccwd}
 \def\CTEX@subsection@beforeskip{12pt}
 \def\CTEX@subsection@afterskip{6pt}
 %%
@@ -234,7 +235,7 @@
 \renewcommand\cftdotsep{0.5}                    %虚线间隔
 % \renewcommand{\cftchapafterpnum}{\vspace{6pt}} %章节间隔 ，节前6磅
 \setlength{\cftbeforesecskip}{6pt}              %章节间隔 ，节前6磅
-
+% \setlength{\beforecaptionskip}{21pt}            %图表 名序间隔，2个5号字符，21磅
 % \setlength{\cftbeforechapskip}{6pt}
 \setlength{\cftbeforesubsecskip}{6pt}
 
@@ -577,9 +578,12 @@
 
 \renewcommand{\theequation}{\thechapter-\@arabic \c@equation}
 \renewcommand{\thefigure}{\thechapter-\@arabic \c@figure}
-\renewcommand{\thetable}{\thechapter-\@arabic \c@table}
-% 图序与图名之间空1个汉字符。
-\RequirePackage[labelsep = quad]{caption}
+\renewcommand{\thetable}{\thechapter-\@arabic  \c@table}
+% 图序与图名之间空2个汉字符。2020年新规定 【2020】77号 文件
+\DeclareCaptionLabelSeparator{qquad}{\qquad}  %两个汉字符
+\DeclareCaptionLabelSeparator{bigspace}{.\hspace*{4em}}  %三个汉字符
+\RequirePackage[labelsep=qquad]{caption}
+% \captionsetup{labelsep=qquad}
 % 这应该图和表单独设置，但是我都设置了6，你可以自己在插入表格时单独设定图的要求
 % 参考如下： https://www.latexstudio.net/archives/8652.html
 \setlength{\abovecaptionskip}{6pt}
