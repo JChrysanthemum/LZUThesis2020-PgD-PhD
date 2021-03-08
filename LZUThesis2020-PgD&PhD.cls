@@ -206,7 +206,7 @@
     % Footers
     \fancyfoot{} % clear all footer fields
     \cfoot[C]{\thepage}
-    \renewcommand\headrule{\hrule width \hsize height 0.4pt \kern 0.6pt \hrule width \hsize height 0.4pt}
+    \renewcommand\headrule{\hrule width \hsize height 0.8pt \kern 0.8pt \hrule width \hsize height 0.4pt}
 }
 
 \appto\mainmatter{\pagestyle{mainmatterstyle}}
