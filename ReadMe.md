@@ -31,6 +31,7 @@ This project is a fork from [LZUThesis2020](https://github.com/yuhlzu/LZUThesis2
     * 修改了页眉间距。
     * 修改了枚举的举的标号和左缩进。
     * 修改了三级标题首行缩进2字符（新规定）
+    * 摘要页关键字行缩进2字符。
 * 4.内容
     * 删除了原论文中的教学部分，使之尽量紧凑。
     * 添加了引用格式为上标格式的命令（\upcite）

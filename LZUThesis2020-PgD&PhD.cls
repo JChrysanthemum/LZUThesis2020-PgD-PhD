@@ -235,7 +235,6 @@
 \renewcommand\cftdotsep{0.5}                    %虚线间隔
 % \renewcommand{\cftchapafterpnum}{\vspace{6pt}} %章节间隔 ，节前6磅
 \setlength{\cftbeforesecskip}{6pt}              %章节间隔 ，节前6磅
-% \setlength{\beforecaptionskip}{21pt}            %图表 名序间隔，2个5号字符，21磅
 % \setlength{\cftbeforechapskip}{6pt}
 \setlength{\cftbeforesubsecskip}{6pt}
 
@@ -301,7 +300,7 @@
 
         {\fontsize{22bp}{0pt}\ziju{1}\bfseries\songti{硕士学位论文\\}}
         \vspace{20.8pt}
-        {\zihao{3} \songti（\quad 学\quad 术\quad 学\quad 位\quad）}
+        {\zihao{3} \songti（\quad 专\quad 业\quad 学\quad 位\quad）}
 
         \vspace{20.8pt}
         \par
@@ -452,7 +451,7 @@
     \par #1\\%
     \vbox{}\\
     % 关键词这几个字，应该是加粗（宋体加粗）
-    {\bfseries\songti 关键词：} #2
+   {\bfseries\songti \indent 关键词：} #2
 }
 
 % 英文摘要实际单词在300个左右，应与中文摘要内容一致。毕业论文（设计）英文题目字体为Times New Roman，二号，段前24磅，段后18磅；“英文摘要”为“Abstract”，字体为Arial，三号，加粗居中；英文摘要正文每段开头空4个字符间隙，字体为Times New Roman，小四号。行间距为固定值20磅。
@@ -483,7 +482,7 @@
     \vspace{11pt}
     \par #1\\%
     \vbox{}\\
-    {\bfseries Key Words:} #2
+    {\bfseries \indent Key Words:} #2
 }
 
 
@@ -563,8 +562,13 @@
 %---------------------------
 %程序伪代码实现
 %---------------------------
-\RequirePackage{algorithm}
-\RequirePackage{algorithmic}
+% \RequirePackage{algorithm}
+% \RequirePackage{algorithmic}
+% \floatname{algorithm}{算法}
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
 \floatname{algorithm}{算法}
 \renewcommand{\algorithmicrequire}{\bfseries{输入:}}
 \renewcommand{\algorithmicensure}{\bfseries{输出:}}
@@ -579,6 +583,7 @@
 \renewcommand{\theequation}{\thechapter-\@arabic \c@equation}
 \renewcommand{\thefigure}{\thechapter-\@arabic \c@figure}
 \renewcommand{\thetable}{\thechapter-\@arabic  \c@table}
+\renewcommand{\thealgorithm}{\thechapter-\arabic {algorithm}}
 % 图序与图名之间空2个汉字符。2020年新规定 【2020】77号 文件
 \DeclareCaptionLabelSeparator{qquad}{\qquad}  %两个汉字符
 \DeclareCaptionLabelSeparator{bigspace}{.\hspace*{4em}}  %三个汉字符
@@ -588,6 +593,8 @@
 % 参考如下： https://www.latexstudio.net/archives/8652.html
 \setlength{\abovecaptionskip}{6pt}
 \setlength{\belowcaptionskip}{6pt}
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
 
 
 %%=======%
@@ -600,7 +607,8 @@
 \newcommand{\printbib}{
     \zihao{5}
     % \bibliographystyle{bib/lzubib}
-     \bibliographystyle{gbt7714-numerical}
+    % \bibliographystyle{gbt7714-author-year}
+    \bibliographystyle{gbt7714-numerical}
     \cleardoublepage
     \phantomsection
     \addcontentsline{toc}{chapter}{参考文献}
