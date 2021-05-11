@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{LZUThesis2007}[2020/06/01 V2.1.3 Thesis for LZUer By yuhldr Use 2007 standard]
+\ProvidesClass{LZUThesis2020-PgD&PhD}[2020/05/10 V0.1.0 Thesis for LZUer PgD&PhD By Patrick Use 2021 standard]
 \LoadClass[12pt, a4paper, UTF8, openany,oneside]{ctexbook}
 
 % 部分内容参考了https://github.com/suchot/LZUThesis2017，适配了2020最新的毕业论文要求
@@ -82,6 +82,32 @@
 
 % 增加空白页，类似word的换页符，方便打印装订
 \newcommand{\blankpage}{\afterpage{\null\newpage}}
+
+
+% 图表目录编号头
+\newcommand{\figlabel}{图}
+\newcommand{\tbllabel}{表}
+
+% 自定义目录
+\newcommand{\customcontent}{
+  % 常规目录
+  \tableofcontents
+  \thispagestyle{empty}
+
+  % 图表目录标题
+  \CTEXoptions[listfigurename={插\quad 图\quad 目\quad 录}]
+  \CTEXoptions[listtablename={表\quad 格\quad 目\quad 录}]
+
+  % 插图目录
+  \clearpage
+  \renewcommand{\numberline}[1]{\figlabel~##1\hspace*{1em}}
+  \listoffigures
+
+  % 表格目录
+  \clearpage
+  \renewcommand{\numberline}[1]{\tbllabel~##1\hspace*{1em}}
+  \listoftables
+}
 
 
 % 表格文字居中，其实就是相当于表格合并
@@ -334,7 +360,7 @@
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}\the\major}} \\[0.40cm]
             {\bfseries\songti \zihao{4}{研\hfill 究\hfill 方\hfill 向}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}  \the\research}} \\[0.40cm]
-            {\bfseries\songti \zihao{4}{教\hfill 育\hfill 类\hfill 型}} &
+            {\bfseries\songti \zihao{4}{学\hfill 位\hfill 级\hfill 别}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}  \the\education}} \\[0.40cm]
             {\bfseries\songti \zihao{4}{指\hfill 导\hfill 教\hfill 师}} &
             {\LZUunderline[320pt]{ \bfseries\songti \zihao{-3}  \the\advisor}} \\[0.40cm]
@@ -587,15 +613,19 @@
 % 图序与图名之间空2个汉字符。2020年新规定 【2020】77号 文件
 \DeclareCaptionLabelSeparator{qquad}{\qquad}  %两个汉字符
 \DeclareCaptionLabelSeparator{bigspace}{.\hspace*{4em}}  %三个汉字符
-\RequirePackage[labelsep=qquad]{caption}
+\RequirePackage[labelsep=quad]{caption}
+% labelsep=quad
+% labelsep=qquad
 % \captionsetup{labelsep=qquad}
 % 这应该图和表单独设置，但是我都设置了6，你可以自己在插入表格时单独设定图的要求
 % 参考如下： https://www.latexstudio.net/archives/8652.html
 \setlength{\abovecaptionskip}{6pt}
-\setlength{\belowcaptionskip}{6pt}
-\setlength{\abovedisplayskip}{6pt}
-\setlength{\belowdisplayskip}{6pt}
+\setlength{\belowcaptionskip}{-6pt}
+% \setlength{\abovedisplayskip}{1pt}
+% \setlength{\belowdisplayskip}{1pt}
 
+% 公式左对齐
+\newcommand{\mathleft}{\@fleqntrue\@mathmargin 21pt}
 
 %%=======%
 %参考文献

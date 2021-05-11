@@ -32,6 +32,8 @@ This project is a fork from [LZUThesis2020](https://github.com/yuhlzu/LZUThesis2
     * 修改了枚举的举的标号和左缩进。
     * 修改了三级标题首行缩进2字符（新规定）
     * 摘要页关键字行缩进2字符。
+    * 目录生成方面，新增了命令\customcontent取代原始的\tableofcontents，
+    新命令可以在原始目录后自动生成插图目录和表格目录。
 * 4.内容
     * 删除了原论文中的教学部分，使之尽量紧凑。
     * 添加了引用格式为上标格式的命令（\upcite）
