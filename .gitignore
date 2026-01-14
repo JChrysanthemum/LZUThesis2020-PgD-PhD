@@ -1,0 +1,10 @@
+# Tex auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.gz
+*.thm
+*.toc
+
